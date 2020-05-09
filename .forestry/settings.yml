@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: en/site/about-us
+  label: About Us
+  create: all
+  match: "**/*"
+  templates:
+  - information-yml
 - type: heading
   label: Content
 - type: jekyll-posts
